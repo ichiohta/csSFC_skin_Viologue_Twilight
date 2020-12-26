@@ -1,0 +1,28 @@
+#!/usr/bin/node
+
+const fs = require('fs');
+const cp = require('child_process');
+
+const rootPath = process.argv[1].replace(/\/scripts\/[^\/]+$/, "");
+const xmlRootPath = `${rootPath}/GUI_USER`;
+const outputRootPath = `${rootPath}/src`;
+const baseCulture = "en-ca";
+const resourceRootPath = `${rootPath}/resources`;
+const resourceOutputPath = `${resourceRootPath}/${baseCulture}`;
+
+if (!fs.existsSync(resourceOutputPath)) {
+    fs.mkdirSync(resourceOutputPath);
+}
+
+if (!fs.existsSync(outputRootPath)) {
+    fs.mkdirSync(outputRootPath);
+}
+
+fs.readdirSync(xmlRootPath)
+    .filter(filename => filename.endsWith("xml"))
+    .forEach(filename => {
+        const inputFilePath = `${xmlRootPath}/${filename}`;
+        const outputFilePath = `${outputRootPath}/${filename}.tpl`;
+        const resourceFilePath = `${resourceOutputPath}/${filename}.json`;
+        cp.fork(`${__dirname}/gentpl`, [ inputFilePath, outputFilePath, resourceFilePath ]);
+    });

@@ -1,0 +1,20 @@
+#!/usr/bin/node
+
+const fs = require('fs');
+const cp = require('child_process');
+
+const baseCulture = "en-ca";
+const pseudoCulture = "xx-zz";
+const rootPath = process.argv[1].replace(/\/scripts\/[^\/]+$/, "");
+const resourceRootPath = `${rootPath}/resources`;
+const inputResourcePath = `${resourceRootPath}/${baseCulture}`;
+const outputResourcePath = `${resourceRootPath}/${pseudoCulture}`;
+
+fs.readdirSync(inputResourcePath)
+    .filter(filename => filename.endsWith("json"))
+    .forEach(filename => {
+        const inputFilePath = `${inputResourcePath}/${filename}`;
+        const outputFilePath = `${outputResourcePath}/${filename}`;
+        console.log(`${inputFilePath} -> ${outputFilePath}`);
+        cp.fork(`${__dirname}/pseudoloc`, [ inputFilePath, outputFilePath ]);
+    });

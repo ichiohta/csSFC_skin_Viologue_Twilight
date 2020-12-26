@@ -1,0 +1,28 @@
+#!/usr/bin/node
+
+const fs = require('fs');
+const cp = require('child_process');
+
+const targetCulture = process.argv[2];
+
+if (!targetCulture) {
+    console.error("specify target cutlure code");
+    process.exit(-1);
+}
+
+const rootPath = process.argv[1].replace(/\/scripts\/[^\/]+$/, "");
+const inputRootPath = `${rootPath}/src`;
+const outputRootPath = `${rootPath}/GUI_USER`;
+const resourceRootPath = `${rootPath}/resources`;
+
+fs.readdirSync(inputRootPath)
+    .filter(filename => filename.endsWith('.tpl'))
+    .forEach(filename => {
+        const outputFileName = filename.substring(0, filename.length - 4);
+        const inputFilePath = `${inputRootPath}/${filename}`;
+        const outputFilePath = `${outputRootPath}/${outputFileName}`;
+        const resourceFilePath = `${resourceRootPath}/${targetCulture}/${outputFileName}.json`;
+        if (fs.existsSync(resourceFilePath)) {
+            cp.fork(`${__dirname}/applyrsc`, [ inputFilePath, resourceFilePath, outputFilePath ]);
+        }
+    });
