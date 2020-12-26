@@ -23,6 +23,6 @@ fs.readdirSync(inputRootPath)
         const outputFilePath = `${outputRootPath}/${outputFileName}`;
         const resourceFilePath = `${resourceRootPath}/${targetCulture}/${outputFileName}.json`;
         if (fs.existsSync(resourceFilePath)) {
-            cp.fork(`${__dirname}/applyrsc`, [ inputFilePath, resourceFilePath, outputFilePath ]);
+            cp.fork(`${__dirname}/applyrsc`, [ inputFilePath, outputFilePath, resourceFilePath ]);
         }
     });
