@@ -15,6 +15,5 @@ fs.readdirSync(inputResourcePath)
     .forEach(filename => {
         const inputFilePath = `${inputResourcePath}/${filename}`;
         const outputFilePath = `${outputResourcePath}/${filename}`;
-        console.log(`${inputFilePath} -> ${outputFilePath}`);
         cp.fork(`${__dirname}/pseudoloc`, [ inputFilePath, outputFilePath ]);
     });
