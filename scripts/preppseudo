@@ -10,6 +10,10 @@ const resourceRootPath = `${rootPath}/resources`;
 const inputResourcePath = `${resourceRootPath}/${baseCulture}`;
 const outputResourcePath = `${resourceRootPath}/${pseudoCulture}`;
 
+if (!fs.existsSync(outputResourcePath)) {
+    fs.mkdirSync(outputResourcePath);
+}
+
 fs.readdirSync(inputResourcePath)
     .filter(filename => filename.endsWith("json"))
     .forEach(filename => {
