@@ -22,7 +22,7 @@ fs.readdirSync(xmlRootPath)
     .filter(filename => filename.endsWith("xml"))
     .forEach(filename => {
         const inputFilePath = `${xmlRootPath}/${filename}`;
-        const outputFilePath = `${outputRootPath}/${filename}.tpl`;
+        const outputFilePath = `${outputRootPath}/${filename.replace(/\.([^\.]+$)/, ".src.$1")}`;
         const resourceFilePath = `${resourceOutputPath}/${filename}.json`;
         cp.fork(`${__dirname}/gentpl`, [ inputFilePath, outputFilePath, resourceFilePath ]);
     });

@@ -17,9 +17,9 @@ const outputRootPath = `${rootPath}/GUI_USER`;
 const resourceRootPath = `${rootPath}/resources`;
 
 fs.readdirSync(inputRootPath)
-    .filter(filename => filename.endsWith('.tpl'))
+    .filter(filename => filename.indexOf(".src.") > 0)
     .forEach(filename => {
-        const outputFileName = filename.substring(0, filename.length - 4);
+        const outputFileName = filename.replace(".src.", ".");
         const inputFilePath = `${inputRootPath}/${filename}`;
         const outputFilePath = `${outputRootPath}/${outputFileName}`;
         const resourceFilePath = `${resourceRootPath}/${targetCulture}/${outputFileName}.json`;
