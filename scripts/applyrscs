@@ -4,6 +4,7 @@ const fs = require('fs');
 const cp = require('child_process');
 
 const targetCulture = process.argv[2];
+const fallbackCulture = process.argv[3] || 'en-ca';
 
 if (!targetCulture) {
     console.error("specify target cutlure code");
@@ -22,7 +23,8 @@ fs.readdirSync(inputRootPath)
         const inputFilePath = `${inputRootPath}/${filename}`;
         const outputFilePath = `${outputRootPath}/${outputFileName}`;
         const resourceFilePath = `${resourceRootPath}/${targetCulture}/${outputFileName}.json`;
+        const fallbackResourceFilePath = `${resourceRootPath}/${fallbackCulture}/${outputFileName}.json`;
         if (fs.existsSync(resourceFilePath)) {
-            cp.fork(`${__dirname}/applyrsc`, [ inputFilePath, outputFilePath, resourceFilePath ]);
+            cp.fork(`${__dirname}/applyrsc`, [ inputFilePath, outputFilePath, resourceFilePath, fallbackResourceFilePath ]);
         }
     });
