@@ -4,7 +4,7 @@ const fs = require('fs');
 const cp = require('child_process');
 
 const rootPath = process.argv[1].replace(/\/scripts\/[^\/]+$/, "");
-const xmlRootPath = `${rootPath}/GUI_USER`;
+const xmlRootPath = `${rootPath}/GUI_USER.common`;
 const outputRootPath = `${rootPath}/src`;
 const baseCulture = "en-ca";
 const resourceRootPath = `${rootPath}/resources`;
@@ -19,7 +19,7 @@ if (!fs.existsSync(outputRootPath)) {
 }
 
 fs.readdirSync(xmlRootPath)
-    .filter(filename => filename.endsWith("xml"))
+    .filter(filename => filename.endsWith(".xml"))
     .forEach(filename => {
         const inputFilePath = `${xmlRootPath}/${filename}`;
         const outputFilePath = `${outputRootPath}/${filename.replace(/\.([^\.]+$)/, ".src.$1")}`;
