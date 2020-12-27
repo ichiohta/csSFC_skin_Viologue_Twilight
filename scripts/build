@@ -1,0 +1,21 @@
+#!/usr/bin/node
+
+const fs = require('fs');
+const cp = require('child_process');
+
+const rootPath = process.argv[1].replace(/\/scripts\/[^\/]+$/, "");
+const commonFilePath = `${rootPath}/GUI_USER.common`;
+const buildRootPath = `${rootPath}/build`;
+
+const baseCulture = "en-ca";
+const cultures = [ "xx-zz", "en-us" ];
+
+for (const culture of cultures) {
+    const cultureBuildRootPath = `${buildRootPath}/${culture}/GUI_USER`;
+    // Ensure we delete the existing build
+    if (fs.existsSync(cultureBuildRootPath)) {
+        fs.rmdirSync(cultureBuildRootPath, { recursive: true });
+    }
+    cp.fork(`${__dirname}/fcopy`, [ commonFilePath, cultureBuildRootPath ] );
+    cp.fork(`${__dirname}/applyrscs`, [ cultureBuildRootPath, culture, baseCulture ]);
+}
