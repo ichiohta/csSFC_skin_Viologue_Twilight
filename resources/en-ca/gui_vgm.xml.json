@@ -1,0 +1,15 @@
+{
+ "gui_vgm.xml/RSC_0": "Choose an SPC",
+ "gui_vgm.xml/RSC_1": "📁    Select Folder",
+ "gui_vgm.xml/RSC_2": "SPC Files?",
+ "gui_vgm.xml/RSC_3": "Song Info",
+ "gui_vgm.xml/RSC_4": "Registers",
+ "gui_vgm.xml/RSC_5": "ARAM View",
+ "gui_vgm.xml/RSC_6": "mute",
+ "gui_vgm.xml/RSC_7": "Echo",
+ "gui_vgm.xml/RSC_8": "solo",
+ "gui_vgm.xml/RSC_9": "grab",
+ "gui_vgm.xml/RSC_10": "All",
+ "gui_vgm.xml/RSC_11": "Detune",
+ "gui_vgm.xml/RSC_12": "Speed"
+}

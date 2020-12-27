@@ -1,0 +1,22 @@
+{
+ "sub_spcdelay.xml/RSC_0": "Delay",
+ "sub_spcdelay.xml/RSC_1": "Time",
+ "sub_spcdelay.xml/RSC_2": "Feedback",
+ "sub_spcdelay.xml/RSC_3": "Dry",
+ "sub_spcdelay.xml/RSC_4": "Wet",
+ "sub_spcdelay.xml/RSC_5": "Dry Pan",
+ "sub_spcdelay.xml/RSC_6": "Wet Pan",
+ "sub_spcdelay.xml/RSC_7": "Filter",
+ "sub_spcdelay.xml/RSC_8": "Level",
+ "sub_spcdelay.xml/RSC_9": "0k",
+ "sub_spcdelay.xml/RSC_10": "4k",
+ "sub_spcdelay.xml/RSC_11": "8k",
+ "sub_spcdelay.xml/RSC_12": "12k",
+ "sub_spcdelay.xml/RSC_13": "16k",
+ "sub_spcdelay.xml/RSC_14": "Phase",
+ "sub_spcdelay.xml/RSC_15": "Left Dry",
+ "sub_spcdelay.xml/RSC_16": "Left Wet",
+ "sub_spcdelay.xml/RSC_17": "Explode",
+ "sub_spcdelay.xml/RSC_18": "!!!!!",
+ "sub_spcdelay.xml/RSC_19": "(VERY LOUD)"
+}
