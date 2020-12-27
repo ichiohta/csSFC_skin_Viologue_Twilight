@@ -26,7 +26,7 @@ There are two ways to accomplish this task:
 1. Update the original XML file
 2. Update the source and resource files
 
-### Update the Original XML file
+### Update the Original XML File
 If you have not localized the corresponding resource file for any other culutres yet, you can safely update the original XML file and regenerate source and resource files.
 
 ### Update the Source and Resource Files
