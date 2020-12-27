@@ -24,7 +24,7 @@ if (!fs.existsSync(outputRootPath)) {
     });
 }
 
-const rootPath = process.argv[1].replace(/\/scripts\/[^\/]+$/, "");
+const rootPath = __dirname.replace(/\\/g, "/").replace(/\/[^\/]+$/, "");
 const inputRootPath = `${rootPath}/src`;
 const resourceRootPath = `${rootPath}/resources`;
 
