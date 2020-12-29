@@ -8,9 +8,10 @@ const commonFilePath = `${rootPath}/GUI_USER.common`;
 const buildRootPath = `${rootPath}/build`;
 
 const baseCulture = "en-ca";
-const cultures = [ "xx-zz", "en-us" ];
+const cultures = [ "xx-zz", "en-us", "ja-jp" ];
 
 for (const culture of cultures) {
+    const cutlureResourceRootPath = `${rootPath}/resources/${culture}`;
     const cultureBuildRootPath = `${buildRootPath}/${culture}/GUI_USER`;
     // Ensure we delete the existing build
     if (fs.existsSync(cultureBuildRootPath)) {
@@ -18,4 +19,13 @@ for (const culture of cultures) {
     }
     cp.fork(`${__dirname}/fcopy`, [ commonFilePath, cultureBuildRootPath ] );
     cp.fork(`${__dirname}/applyrscs`, [ cultureBuildRootPath, culture, baseCulture ]);
+
+    if (fs.existsSync(cutlureResourceRootPath)) {
+        fs.readdirSync(cutlureResourceRootPath)
+            .map(name => `${cutlureResourceRootPath}/${name}`)
+            .filter(path => !path.endsWith(".json") && !fs.lstatSync(path).isDirectory())
+            .map(path => {
+                cp.fork(`${__dirname}/fcopy`, [ path, cultureBuildRootPath ]);
+            })
+    }
 }
