@@ -17,7 +17,7 @@ for (const culture of cultures) {
     if (fs.existsSync(cultureBuildRootPath)) {
         fs.rmdirSync(cultureBuildRootPath, { recursive: true });
     }
-    cp.fork(`${__dirname}/fcopy`, [ commonFilePath, cultureBuildRootPath ] );
+    cp.fork(`${__dirname}/fcopy`, [ commonFilePath, cultureBuildRootPath ]);
     cp.fork(`${__dirname}/applyrscs`, [ cultureBuildRootPath, culture, baseCulture ]);
 
     if (fs.existsSync(cutlureResourceRootPath)) {
