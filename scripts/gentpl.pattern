@@ -1,5 +1,0 @@
- labelText
- text
-<OptionItem [^>]*name
-<PageName [^>]*name
-<Font [^>]*filename
