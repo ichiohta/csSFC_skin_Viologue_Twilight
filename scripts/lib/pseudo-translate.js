@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PseudoTranslate = void 0;
+exports.pseudoTranslate = void 0;
 const fs_1 = require("fs");
 const resource_helpers_1 = require("./resource-helpers");
 const argument_helpers_1 = require("./argument-helpers");
-const PseudoTranslate = (args) => {
+const pseudoTranslate = (args) => {
     const { inputPath, outputPath } = args;
     argument_helpers_1.validateFilePath(inputPath, {
         what: "input file path",
@@ -23,5 +23,5 @@ const PseudoTranslate = (args) => {
         throw new Error(`Failed to pseudo-translate, due to: ${reason}`);
     }
 };
-exports.PseudoTranslate = PseudoTranslate;
+exports.pseudoTranslate = pseudoTranslate;
 //# sourceMappingURL=pseudo-translate.js.map

@@ -17,7 +17,7 @@ fs.readdirSync(inputResourcePath)
   .forEach((filename) => {
     const inputPath = `${inputResourcePath}/${filename}`;
     const outputPath = `${outputResourcePath}/${filename}`;
-    pt.PseudoTranslate({
+    pt.pseudoTranslate({
       inputPath,
       outputPath,
     });
