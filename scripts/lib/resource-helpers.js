@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.pseudoLocalize = exports.getPseudoLocaliation = exports.deserializeResources = exports.serializeResources = exports.applyResources = exports.extractRawText = void 0;
+exports.recycleTranslation = exports.deserializeTranslationMemory = exports.pseudoLocalize = exports.getPseudoLocaliation = exports.deserializeResources = exports.serializeResources = exports.applyResources = exports.extractRawText = void 0;
 const extractRawText = (stringMarkers, input, options) => {
     const { prefix } = options || {};
     const pattern = `(${stringMarkers.join("|")})="([^"]+)"`;
@@ -99,4 +99,32 @@ const pseudoLocalize = (resources) => {
     return localized;
 };
 exports.pseudoLocalize = pseudoLocalize;
+const deserializeTranslationMemory = (text) => text
+    .toString()
+    .split("\n")
+    .map(line => {
+    const [name, value] = line.split("\t");
+    return {
+        name,
+        value
+    };
+})
+    .reduce((acc, cur) => {
+    const { name, value } = cur;
+    if (name !== undefined && value !== undefined) {
+        acc.set(name.toLowerCase(), value);
+    }
+    return acc;
+}, new Map());
+exports.deserializeTranslationMemory = deserializeTranslationMemory;
+const recycleTranslation = (sourceResources, translationMemory) => {
+    const translated = new Map();
+    sourceResources.forEach((value, key) => {
+        const tmKey = value.toLowerCase();
+        const tmValue = translationMemory.get(tmKey);
+        translated.set(key, tmValue || value);
+    });
+    return translated;
+};
+exports.recycleTranslation = recycleTranslation;
 //# sourceMappingURL=resource-helpers.js.map
