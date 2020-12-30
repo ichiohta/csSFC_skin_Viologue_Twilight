@@ -17,7 +17,9 @@ const localizeFile = (args) => {
         throw new Error("Specify at least one resource file");
     }
     const content = fs_1.readFileSync(inputPath).toString();
-    const resourceSets = resourceInputPaths.map(path => resource_helpers_1.deserializeResources(fs_1.readFileSync(path).toString()));
+    const resourceSets = resourceInputPaths
+        .filter(path => fs_1.existsSync(path))
+        .map(path => resource_helpers_1.deserializeResources(fs_1.readFileSync(path).toString()));
     const output = resource_helpers_1.applyResources(content, ...resourceSets);
     fs_1.writeFileSync(outputPath, Buffer.from(output));
 };
