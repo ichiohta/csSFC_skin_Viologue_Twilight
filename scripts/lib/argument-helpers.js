@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateFilePath = void 0;
+exports.normalizeSeparator = exports.validateFilePath = void 0;
 const fs_1 = require("fs");
 const validateFilePath = (path, options) => {
     const { needsExist, what } = options;
@@ -12,4 +12,6 @@ const validateFilePath = (path, options) => {
     }
 };
 exports.validateFilePath = validateFilePath;
+const normalizeSeparator = (path) => path.replace(/\\/g, "/").replace(/\/[^/]+$/, "");
+exports.normalizeSeparator = normalizeSeparator;
 //# sourceMappingURL=argument-helpers.js.map

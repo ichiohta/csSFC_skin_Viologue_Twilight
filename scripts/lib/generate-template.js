@@ -35,9 +35,7 @@ const generateTemplate = (args) => {
         fs_1.writeFileSync(outputPath, Buffer.from(template));
         fs_1.writeFileSync(resourcesPath, resourcesText);
     }
-    return {
-        countResources: resources.size
-    };
+    return resources.size;
 };
 exports.generateTemplate = generateTemplate;
 //# sourceMappingURL=generate-template.js.map
