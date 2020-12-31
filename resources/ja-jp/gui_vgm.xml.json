@@ -1,15 +1,15 @@
 {
- "gui_vgm.xml/RSC_0": "Choose an SPC",
- "gui_vgm.xml/RSC_1": "📁    Select Folder",
- "gui_vgm.xml/RSC_2": "SPC Files?",
+ "gui_vgm.xml/RSC_0": "SPC ファイルを選択",
+ "gui_vgm.xml/RSC_1": "📁 フォルダーを選択",
+ "gui_vgm.xml/RSC_2": "SPC ファイル？",
  "gui_vgm.xml/RSC_3": "曲情報",
  "gui_vgm.xml/RSC_4": "レジスタ",
  "gui_vgm.xml/RSC_5": "ARAMの表示",
- "gui_vgm.xml/RSC_6": "mute",
+ "gui_vgm.xml/RSC_6": "ミュート",
  "gui_vgm.xml/RSC_7": "エコー",
- "gui_vgm.xml/RSC_8": "solo",
+ "gui_vgm.xml/RSC_8": "ソロ",
  "gui_vgm.xml/RSC_9": "取得",
- "gui_vgm.xml/RSC_10": "All",
+ "gui_vgm.xml/RSC_10": "すべて",
  "gui_vgm.xml/RSC_11": "デチューン",
  "gui_vgm.xml/RSC_12": "再生速度"
 }

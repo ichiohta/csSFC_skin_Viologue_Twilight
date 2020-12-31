@@ -1,3 +1,4 @@
+Changa-ExtraLight.ttf	JapanSans90.ttf
 Settings	設定
 Preset	プリセット
 MIDI Mode	MIDI モード
@@ -152,4 +153,9 @@ Version Check	最新バージョンの確認
 Close	閉じる
 Show License	ライセンスの表示
 Note Ons	現在の発音数
-Changa-ExtraLight.ttf	JapanSans90.ttf
+solo	ソロ
+mute	ミュート
+Choose an SPC	SPC ファイルを選択
+📁    Select Folder	📁 フォルダーを選択
+All	すべて
+SPC Files?	SPC ファイル？
