@@ -1,12 +1,16 @@
 Changa-ExtraLight.ttf	JapanSans90.ttf
+AuberCFSemiBold-SemiBold.ttf	JapanSans90.ttf
 Settings	設定
 Preset	プリセット
 MIDI Mode	MIDI モード
 Mono-Timbral	モノティンバー
 Multi-Timbral	マルチティンバー
+Poly-Timbral	マルチティンバー
 MPE	MPE
 Poly	発音数
+Voices	発音数
 Interp	補間方法
+Interp.	補間方法
 Nearest	最近傍
 Linear	線形
 Cubic	キュービック
@@ -159,3 +163,11 @@ Choose an SPC	SPC ファイルを選択
 📁    Select Folder	📁 フォルダーを選択
 All	すべて
 SPC Files?	SPC ファイル？
+Mod Matrix	マトリックス
+Show Tips	使い方
+Glossary	各項目の解説
+＋   Add	＋ 追加
+✘   Clear	✘ 削除
+Manual	手動
+Tuning Type	チューニング
+C4 Sample Rate	C4 レート

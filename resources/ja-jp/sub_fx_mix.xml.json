@@ -1,5 +1,5 @@
 {
- "sub_fx_mix.xml/RSC_0": "MIX",
+ "sub_fx_mix.xml/RSC_0": "ミックス",
  "sub_fx_mix.xml/RSC_1": "ms",
  "sub_fx_mix.xml/RSC_2": "0",
  "sub_fx_mix.xml/RSC_3": "128",
@@ -19,8 +19,8 @@
  "sub_fx_mix.xml/RSC_17": "240",
  "sub_fx_mix.xml/RSC_18": "フィードバック",
  "sub_fx_mix.xml/RSC_19": "Ø",
- "sub_fx_mix.xml/RSC_20": "DRY MIX",
+ "sub_fx_mix.xml/RSC_20": "ドライ",
  "sub_fx_mix.xml/RSC_21": "レベル",
  "sub_fx_mix.xml/RSC_22": "パン",
- "sub_fx_mix.xml/RSC_23": "WET MIX"
+ "sub_fx_mix.xml/RSC_23": "ウェット"
 }

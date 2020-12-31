@@ -1,15 +1,15 @@
 {
- "gui_modlinks.xml/RSC_0": "Mod Matrix",
+ "gui_modlinks.xml/RSC_0": "マトリックス",
  "gui_modlinks.xml/RSC_1": "ソース",
  "gui_modlinks.xml/RSC_2": "関数",
- "gui_modlinks.xml/RSC_3": "Control",
+ "gui_modlinks.xml/RSC_3": "コントロール",
  "gui_modlinks.xml/RSC_4": "ターゲット",
  "gui_modlinks.xml/RSC_5": "範囲",
  "gui_modlinks.xml/RSC_6": "反転",
  "gui_modlinks.xml/RSC_7": "操作",
- "gui_modlinks.xml/RSC_8": "＋   Add",
- "gui_modlinks.xml/RSC_9": "✘   Clear",
+ "gui_modlinks.xml/RSC_8": "＋ 追加",
+ "gui_modlinks.xml/RSC_9": "✘ 削除",
  "gui_modlinks.xml/RSC_10": "youtube.com/tssf",
- "gui_modlinks.xml/RSC_11": "Show Tips",
- "gui_modlinks.xml/RSC_12": "Glossary"
+ "gui_modlinks.xml/RSC_11": "使い方",
+ "gui_modlinks.xml/RSC_12": "各項目の解説"
 }

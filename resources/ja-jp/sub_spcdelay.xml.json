@@ -4,8 +4,8 @@
  "sub_spcdelay.xml/RSC_2": "フィードバック",
  "sub_spcdelay.xml/RSC_3": "ドライ",
  "sub_spcdelay.xml/RSC_4": "ウェット",
- "sub_spcdelay.xml/RSC_5": "Dry Pan",
- "sub_spcdelay.xml/RSC_6": "Wet Pan",
+ "sub_spcdelay.xml/RSC_5": "ドライ パン",
+ "sub_spcdelay.xml/RSC_6": "ウェット パン",
  "sub_spcdelay.xml/RSC_7": "フィルタ",
  "sub_spcdelay.xml/RSC_8": "レベル",
  "sub_spcdelay.xml/RSC_9": "0k",
@@ -14,9 +14,9 @@
  "sub_spcdelay.xml/RSC_12": "12k",
  "sub_spcdelay.xml/RSC_13": "16k",
  "sub_spcdelay.xml/RSC_14": "位相",
- "sub_spcdelay.xml/RSC_15": "Left Dry",
- "sub_spcdelay.xml/RSC_16": "Left Wet",
+ "sub_spcdelay.xml/RSC_15": "左ドライ",
+ "sub_spcdelay.xml/RSC_16": "左ウェット",
  "sub_spcdelay.xml/RSC_17": "エクスプロード",
  "sub_spcdelay.xml/RSC_18": "!!!!!",
- "sub_spcdelay.xml/RSC_19": "(VERY LOUD)"
+ "sub_spcdelay.xml/RSC_19": "(大音量)"
 }
