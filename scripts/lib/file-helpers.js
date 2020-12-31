@@ -26,7 +26,7 @@ const copyDirectory = (source, target, onError) => {
     }
     fs_1.readdirSync(source).forEach(filename => {
         const childSource = path_1.join(source, filename);
-        exports.copyFileSync(childSource, actualTarget, onError);
+        exports.copyFileSync(childSource, `${actualTarget}/`, onError);
     });
 };
 const copyFileSync = (source, target, onError) => {
