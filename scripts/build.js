@@ -2,13 +2,15 @@ const fs = require("fs");
 const lt = require("./lib/localize-file");
 const ft = require("./lib/file-helpers");
 
+const args = process.argv.splice(2);
+
 const rootPath = __dirname.replace(/\\/g, "/").replace(/\/[^\/]+$/, "");
 const commonFilePath = `${rootPath}/GUI_USER.common`;
 const sourceRootPath = `${rootPath}/src`;
 const buildRootPath = `${rootPath}/build`;
 
 const baseCulture = "en-ca";
-const cultures = ["xx-zz", "en-us", "ja-jp"];
+const cultures = args.length > 0 ? args : [("xx-zz", "en-us", "ja-jp")];
 const baseCultureResourceRootPath = `${rootPath}/resources/${baseCulture}`;
 
 const onError = (file, reason) => {
