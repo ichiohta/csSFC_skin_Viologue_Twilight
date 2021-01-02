@@ -27,7 +27,7 @@ fs_1.readdirSync(inputResourcePath)
     auto_translate_1.autoTranslate({
         inputPath,
         outputPath,
-        translationMemoryPath
+        translationMemoryPaths: [translationMemoryPath]
     });
 });
 //# sourceMappingURL=recycle.js.map

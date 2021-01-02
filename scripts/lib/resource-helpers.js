@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.recycleTranslation = exports.deserializeTranslationMemory = exports.pseudoLocalize = exports.getPseudoLocaliation = exports.deserializeResources = exports.serializeResources = exports.applyResources = exports.extractRawText = void 0;
+exports.deserializeTranslationMemory = exports.pseudoLocalize = exports.getPseudoLocaliation = exports.deserializeResources = exports.serializeResources = exports.applyResources = exports.extractRawText = void 0;
 const extractRawText = (stringMarkers, input, options) => {
     const { prefix } = options || {};
     const pattern = `(${stringMarkers.join("|")})="([^"]+)"`;
@@ -117,14 +117,4 @@ const deserializeTranslationMemory = (text) => text
     return acc;
 }, new Map());
 exports.deserializeTranslationMemory = deserializeTranslationMemory;
-const recycleTranslation = (sourceResources, translationMemory) => {
-    const translated = new Map();
-    sourceResources.forEach((value, key) => {
-        const tmKey = value.toLowerCase();
-        const tmValue = translationMemory.get(tmKey);
-        translated.set(key, tmValue || value);
-    });
-    return translated;
-};
-exports.recycleTranslation = recycleTranslation;
 //# sourceMappingURL=resource-helpers.js.map

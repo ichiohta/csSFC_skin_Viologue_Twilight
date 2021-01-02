@@ -5,7 +5,7 @@ const generate_template_1 = require("./lib/generate-template");
 const argument_helpers_1 = require("./lib/argument-helpers");
 const rootPath = argument_helpers_1.normalizeSeparator(__dirname);
 const xmlRootPath = `${rootPath}/GUI_USER.common`;
-const outputRootPath = `${rootPath}/src`;
+const outputRootPath = `${rootPath}/sources`;
 const baseCulture = "en-ca";
 const resourceRootPath = `${rootPath}/resources`;
 const resourceOutputPath = `${resourceRootPath}/${baseCulture}`;
@@ -21,7 +21,7 @@ fs_1.readdirSync(xmlRootPath)
     const inputPath = `${xmlRootPath}/${filename}`;
     const outputPath = `${outputRootPath}/${filename}.src`;
     const resourcesPath = `${resourceOutputPath}/${filename}.json`;
-    const patternsPath = `${rootPath}/scripts/resource-names.pattern`;
+    const patternsPath = `${__dirname}/resource-names.pattern`;
     generate_template_1.generateTemplate({
         inputPath,
         outputPath,
