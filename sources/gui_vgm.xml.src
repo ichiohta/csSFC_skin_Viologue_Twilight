@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUI w="1024" h="425" backgroundColor="#00000000">
+	<!--Fancy Backgrounds -->
+	<RoundedRect x="18" y="0" w="989" h="424" style="VGMBG"/>
+	<RoundedRect x="770" y="10" w="227" h="290" style="VGMRightPanel"/>
+	<RoundedRect x="800" y="180" w="192" h="140" style="VGMRightPanel"/>
+	<RoundedRect x="870" y="195" w="127" h="180" style="VGMRightPanel" roundedRectRatio="0.15"/>
+	<RoundedRect x="670" y="300" w="200" h="100" style="VGMBG" roundedRectRatio="0.15"/>
+	<RoundedRect x="770" y="25" w="227" h="240" style="VGMRightPanelHighlights" roundedRectRatio="0.04" />
+
+
+	<!--File Selection -->
+
+		<RoundedRect x="30" y="15" w="227" h="385" style="VGMRightPanel" roundedRectRatio="0.015" />
+		<RoundedRect x="30" y="30" w="227" h="345" style="VGMRightPanelHighlights" roundedRectRatio="0.03" />
+
+		<StaticText text="(gui_vgm.xml/RSC_0)" x="35" y="15" w="80" h="14" style="VGMStaticText2" font="SFC_11"/>
+
+		<CS01BrowserContainer x="30" y="20" w="227" h="380" backgroundColor="#B2B4B2FF" sourceType="fileLister" sourceSubType="1" sourceTypePrefs="1;1;1;SFCBaseDir" sourceTypeExtra="*.spc;*.zip;*.7z;*.sp2;*.rsn">
+
+		<CS01Browser x="0" y="10" w="227" h="345" backgroundColor="#00000000" 
+			style="Browser" scrollbarSize="8" entries_font="SFC_11"
+			entries_indent="12" entries_height="13" entries_heightSpacing="4"
+			image_opened="containerOpened.svg" image_closed="containerClosed.svg"
+			doubleClickSelection="0" hovering="1" rootName="Files" target="load:file|com.Plogue.Emulator.SFC" dragEnabled="0" dropEnabled="0" dragType="browser-VGM" allowMultipleItemsDrag="0" allowMultipleItemsSelection="0" dropType="" drag_fontColor="#430000DE" drag_font_size="small" />
+		
+			<CS01TextButton x="10" y="360" role="setBaseDirSource" prefs="1;1;SFCBaseDir" w="150" h="15" text="(gui_vgm.xml/RSC_1)" style="ExpandViewButtons" />
+
+	</CS01BrowserContainer>
+		<StaticText style="VGMStaticText" text="(gui_vgm.xml/RSC_2)"  x="200" y="380" w="60" h="22"  alignment="center" transparent="1" url="https://www.google.com/search?q=SNES+SPC+Files" font="SFC_9"/>
+
+
+	<GUIContainer path="vgm_player.xml"  xoffset="785" yoffset="392" param_offset="384" />
+
+	<StaticText text="(gui_vgm.xml/RSC_3)" x="795" y="304" w="87" h="20" style="VGMStaticText3" font="SFC_11"/>
+	<StaticText text="(gui_vgm.xml/RSC_4)" x="795" y="328" w="87" h="20" style="VGMStaticText3" font="SFC_11"/>
+	<StaticText text="(gui_vgm.xml/RSC_5)" x="795" y="352" w="87" h="20" style="VGMStaticText3" font="SFC_11"/>
+
+    <!-- Visualization type -->
+	<VisibilityContainer x="770" y="304" w="87" h="72">
+		<CS01RadioButtons x="0" y="0" w="87" h="72" param="394"  vmin="0" vmax="2" vdefault="0"  >
+		
+			<OptionItem x="0"   y="0"  value="0" w="87" h="20" image_on="radiobuttons_on.svg" image_off="radiobuttons_off.svg" />
+			<OptionItem x="0"  y="24"  value="1" w="87" h="20" image_on="radiobuttons_on.svg" image_off="radiobuttons_off.svg" />
+			<OptionItem x="0" y="48"  value="2" w="87" h="20" image_on="radiobuttons_on.svg" image_off="radiobuttons_off.svg" />
+
+		</CS01RadioButtons>
+	</VisibilityContainer>
+
+
+
+	<!--LCD and Bezel -->
+	<ScrollView x="271" y="6" w="488" h="415" scrollbarwidth="0" internalwidth="976" internalheight="415" backgroundColor="#00000000" showScrollbars="0" name="VGMLCDTV">	
+
+	<!-- Large -->
+		<VisibilityContainer x="0" y="0" w="488" h="415">
+			<RoundedRect x="0" y="0" w="487" h="414" style="VGMLCDFrame"/>
+			<StaticImage x="14" y="392" image="PlogueSPCLogo.svg"/>
+			<RoundedRect x="452" y="403" w="25" h="10" style="VGMRightPanelHighlights"/>
+		</VisibilityContainer>
+		<Picture8Data x="4" y="4" w="480" h="384" target="com.Plogue.Emulator.SFC|0|8B17|0" param="DID_CUSTOM_DATA"/>
+		
+	<!-- Small -->
+
+		<!-- Let's Try to Draw a TV using the internal shapes :) -->
+		<VisibilityContainer x="488" y="0" w="488" h="415">
+			<RoundedRect x="0" y="0" w="488" h="415" style="VGMRightPanel" roundedRectRatio="0.025"/>
+			<Rect x="5" y="25" w="478" h="370" style="VGMRightPanelHighlights" roundedRectRatio="0.025"/>
+			<RoundedRect x="20" y="40" w="448" h="310" style="VGMLCDFrame"/>
+			<Line x="75" y="55" w="337" h="1" frameWidth="1" border_color="#00000020" />
+			<Line x="75" y="334" w="337" h="1" frameWidth="1" border_color="#00000020" />
+			<RoundedRect x="30" y="55" w="45" h="280" style="VGMLCDFrame" />
+			<Ellipse x="40" y="120" w="25" h="25" style="VGMLCDFrame" border_color="#00000008" />
+			<Ellipse x="35" y="180" w="35" h="35" style="VGMLCDFrame" border_color="#00000008" />
+			<Ellipse x="35" y="240" w="35" h="35" style="VGMLCDFrame" border_color="#00000008"/>
+			<RoundedRect x="413" y="55" w="45" h="280" style="VGMLCDFrame" />
+			<Ellipse x="423" y="120" w="25" h="25" style="VGMLCDFrame" border_color="#00000008" />
+			<Ellipse x="418" y="180" w="35" h="35" style="VGMLCDFrame" border_color="#00000008" />
+			<Ellipse x="418" y="240" w="35" h="35" style="VGMLCDFrame" border_color="#00000008"/>
+			<StaticImage x="220" y="340" image="PlogueTVLogo.svg"/>
+			<RoundedRect x="84" y="350" w="320" h="30" style="VGMLCDFrame" />
+			<RoundedRect x="85" y="350" w="318" h="10" style="VGMLCDFrame" />
+			<RoundedRect x="65" y="380" w="358" h="10" style="VGMLCDFrame" />
+			<RoundedRect x="370" y="365" w="20" h="10" style="VGMLCDFrame" />
+			<Ellipse x="395" y="368" w="5" h="5" drawMode="filled" fill_color="#FF000080" />
+
+			<Rect x="82" y="62" w="324" h="261" drawMode="stroked" frameWidth="6" border_color="#00000060"/>
+
+			<RoundedRect x="427" y="403" w="17" h="10" style="VGMRightPanelHighlights"/>
+		</VisibilityContainer>
+		<Picture8Data x="572" y="64" w="320" h="256" target="com.Plogue.Emulator.SFC|0|8B17|0" param="DID_CUSTOM_DATA"/>			
+
+	</ScrollView>
+
+	<CS01ScrollViewPageController x="700" y="410" w="46" h="7" type="1" style="EchoViewPageController" frameColor="#00000000" frameDraw="0" scrollViewName="VGMLCDTV" image_1="vgmsize.svg" name="EchoScrollViewPageController" showPageName="0" backgroundColor="#00000000" fontColor="#00000000"	fontColorHL="#00000000" 	disabledLuminanceChange="0" />
+   
+
+   <!-- Controlls Section -->
+
+
+	<OnOffButton     param="931" x="785" y="30" w="20" h="20" image_off="text-VGM/C1-off.svg" image_on="text-VGM/C1-on.svg" />
+	<OnOffButton     param="932" x="785" y="60" w="20" h="20" image_off="text-VGM/C2-off.svg" image_on="text-VGM/C2-on.svg" />
+	<OnOffButton     param="933" x="785" y="90" w="20" h="20" image_off="text-VGM/C3-off.svg" image_on="text-VGM/C3-on.svg" />
+	<OnOffButton     param="934" x="785" y="120" w="20" h="20" image_off="text-VGM/C4-off.svg" image_on="text-VGM/C4-on.svg" />
+	<OnOffButton     param="935" x="785" y="150" w="20" h="20" image_off="text-VGM/C5-off.svg" image_on="text-VGM/C5-on.svg" />
+	<OnOffButton     param="936" x="785" y="180" w="20" h="20" image_off="text-VGM/C6-off.svg" image_on="text-VGM/C6-on.svg" />
+	<OnOffButton     param="937" x="785" y="210" w="20" h="20" image_off="text-VGM/C7-off.svg" image_on="text-VGM/C7-on.svg" />
+	<OnOffButton     param="938" x="785" y="240" w="20" h="20" image_off="text-VGM/C8-off.svg" image_on="text-VGM/C8-on.svg" />
+
+	<StaticText x="785" y="30" w="20" h="230" text="" />
+
+	
+<!--Mute Column-->
+
+	<StaticText text="(gui_vgm.xml/RSC_6)" x="830" y="10" w="30" h="14" style="VGMStaticText2" font="SFC_11"/>
+
+	<RoundedRect x="830" y="30" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1056" x="830" y="30" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1056" x="835" y="45" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="830" y="60" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1057" x="830" y="60" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1057" x="835" y="75" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="830" y="90" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1058" x="830" y="90" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1058" x="835" y="105" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+	
+	<RoundedRect x="830" y="120" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1059" x="830" y="120" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1059" x="835" y="135" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="830" y="150" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1060" x="830" y="150" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1060" x="835" y="165" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+	
+	<RoundedRect x="830" y="180" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1061" x="830" y="180" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1061" x="835" y="195" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="830" y="210" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1062" x="830" y="210" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1062" x="835" y="225" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+	
+	<RoundedRect x="830" y="240" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1063" x="830" y="240" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1063" x="835" y="255" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<StaticText style="VGMStaticText" text="(gui_vgm.xml/RSC_7)" x="785" y="275" w="40" h="16"  alignment="left" transparent="1" font="SFCHEADING_16"/>
+
+	<RoundedRect x="830" y="270" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1066" x="830" y="270" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton2" param="1066" x="835" y="285" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+<!-- Solo Buttons -->
+
+	<StaticText text="(gui_vgm.xml/RSC_8)" x="880" y="10" w="30" h="14" style="VGMStaticText2" font="SFC_11"/>
+
+	<RoundedRect x="880" y="30" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1072" x="880" y="30" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1072" x="885" y="45" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="880" y="60" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1073" x="880" y="60" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1073" x="885" y="75" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="880" y="90" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1074" x="880" y="90" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1074" x="885" y="105" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+	
+	<RoundedRect x="880" y="120" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1075" x="880" y="120" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1075" x="885" y="135" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="880" y="150" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1076" x="880" y="150" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1076" x="885" y="165" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+	
+	<RoundedRect x="880" y="180" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1077" x="880" y="180" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1077" x="885" y="195" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+	<RoundedRect x="880" y="210" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1078" x="880" y="210" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1078" x="885" y="225" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+	
+	<RoundedRect x="880" y="240" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01OnOffButton style="VGMOnOffButton" param="1079" x="880" y="240" w="30" h="20" roundedRatio="0.1" />
+	<CS01OnOffButton style="VGMOnOffButton3" param="1079" x="885" y="255" w="20" h="5" roundedRatio="0.1"  enable_mouse="0" />
+
+<!-- Grab Samples -->
+
+	<StaticText text="(gui_vgm.xml/RSC_9)" x="930" y="10" w="30" h="14" style="VGMStaticText2" font="SFC_11"/>	
+
+	<RoundedRect x="930" y="30" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="922" x="930" y="30" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="60" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="923" x="930" y="60" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="90" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="924" x="930" y="90" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="120" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="925" x="930" y="120" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="150" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="926" x="930" y="150" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="180" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="927" x="930" y="180" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="210" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="928" x="930" y="210" w="30" h="20" roundedRatio="0.1" />
+	<RoundedRect x="930" y="240" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="VGMOnOffButtonGrab" param="929" x="930" y="240" w="30" h="20" roundedRatio="0.1" />
+
+	
+<!-- Grab Other -->
+
+	<RoundedRect x="968" y="135" w="20" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="PatchGrab" x="968" y="135" param="918" fireValueChanged0="1" roundedRatio="0.1" w="20"/>
+	<StaticText text="(gui_vgm.xml/RSC_10)" x="968" y="155" w="20" h="14" style="VGMStaticText2" font="SFC_9"/>
+
+	<RoundedRect x="930" y="270" w="30" h="20" style="VGMOnOffButtonBorder"/>
+	<CS01Button style="PatchGrab" x="930" y="270" param="920" fireValueChanged0="1" roundedRatio="0.1" />
+	
+	<CS03Knob style="SPCKnob3VGM" param="259" x="885" y="315" vdefault="0" vmin="-1200" vmax="1200" stepped="16" unipolar="0" labelText="(gui_vgm.xml/RSC_11)" />
+	<CS03Knob style="SPCKnob3VGM" param="389" x="940" y="315" vmin="0" vmax="2" vdefault="1" stepped="0" font="SFC_11" labelText="(gui_vgm.xml/RSC_12)"/>
+	
+	
+</GUI>	

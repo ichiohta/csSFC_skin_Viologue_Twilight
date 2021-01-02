@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GUI w="1024" h="425">
+
+	<CS01StepEditorContainer param="DID_CUSTOM_DATA" target="$TARGET" x="0" y="0" w="1024" h="425" tab_x="0" tab_y="0" tab_w="0" tab_h="0" style="StepEditorContainer"
+		disabled_x="10" disabled_y="20" disabled_w="994" disabled_h="425" resizeOnOnOff="0" resize_w="0" resize_h="0" tabType="2"
+		frameSelectionSubMenus="0" frameSelectionSubMenusDivider="10" >
+
+	<Rect x="10" y="20" w="830" h="384" style="StepsEditBackground"/>
+	
+	
+	<CS01OnOffButton role="onOff" param="0" w="115" roundedRatio="0.2" style="StepEditorOnOffButton" x="880" y="410" />
+		
+	<!--<StaticText w="50" h="18" x="27" y="1" text="(gui_seq.xml/RSC_0)" style="StaticTextStep2" alignment="left" font="SFC_11"/>-->
+
+
+
+
+	<!--Status bar -->
+		
+		<!-- Copy -->
+		<StaticImage image="steps_copy.svg" x="845" y="100" />
+		<CS01TextButton x="842" y="97" role="copyToCBEx" w="26" h="26" style="ToolsBarButtons" enabledByOnOff="1"/>
+
+		<!-- Paste -->
+		<StaticImage image="steps_paste.svg" x="845" y="125" />
+		<CS01TextButton x="842" y="122" role="copyFromCB" w="26" h="26" style="ToolsBarButtons" enabledByOnOff="1"/>
+
+		<!-- Clear -->
+
+		<StaticImage image="steps_clear.svg" x="845" y="150" />
+		<CS01TextButton x="842" y="147" role="clear" w="26" h="26" style="ToolsBarButtons" enabledByOnOff="1"/>
+
+		<!-- fake controls must be atop the step editor to work-->
+		<CS01StepEditorLoopPointControl param="9"  out="0"/>
+		<CS01StepEditorLoopPointControl param="10" out="1"/>
+		
+		<!--Status Bar Values -->
+		
+		<StaticText x="15" y="406" w="60" h="16" style="StaticTextStep3" text="(gui_seq.xml/RSC_1)" font="SFC_11"/>
+		<StaticText role="displayUser" x="75" y="406" w="30" h="16" style="StaticTextStep3" text="" font="SFC_11"/>
+		
+		<!-- This was the tester for the dynamic step bar highlight option that doesn't work 
+		<StaticText x="85" y="406" w="60" h="16" style="StaticTextStep3" text="(gui_seq.xml/RSC_2)" font="SFC_11"/> -->
+		
+		<!-- BG Stuff -->
+		<Rect x="76" y="407" w="30" h="14" frameWidth="1" drawMode="stroked" border_color="#FFFFFF40" />
+
+		<RoundedRect x="845" y="84" w="20" h="1" style="DividerInverted" />
+
+		<!-- Current Frame -->
+		
+		<CS03Knob style="KnobStepsFrameNumber" role="frameSelection" param="1" x="874" y="55" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_3)" vmin="0" vmax="127" stepped="1" vdefault="1" enabledByOnOff="1" />
+
+		<!-- Left and Right -->
+
+		<StaticText x="937" y="89" w="60" h="16" style="StaticTextStep" text="(gui_seq.xml/RSC_4)" font="SFC_9"/>
+		<CS01TextButton x="945" y="57" role="shiftLeft"  w="20" h="35" text="(gui_seq.xml/RSC_5)" roundedRatio="0.25" offColor="#00000040" style="StepEditorTextButton" color_text="#FFFFFFBB" enabledByOnOff="1" enable_keys="1" virtual_key="11" font="SFC_11"/>
+		<CS01TextButton x="970" y="57" role="shiftRight" w="20" h="35" text="(gui_seq.xml/RSC_6)" roundedRatio="0.25" offColor="#00000040" style="StepEditorTextButton" color_text="#FFFFFFBB" enabledByOnOff="1" enable_keys="1" virtual_key="13" font="SFC_11"/>
+		
+		<!-- Steps Bar Amount -->
+
+		<CS01RadioButtons role="gridScale" param="5" x="874" y="110" w="125" h="15" vmin="4" vmax="64" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" preventIdle="1" >
+		<OptionItem x="0"   y="0"  value="4" w="25" h="15" label_on="4" label_off="4" font="SFC_12" />
+		<OptionItem x="25"  y="0"  value="8" w="25" h="15" label_on="8" label_off="8" font="SFC_12" />
+		<OptionItem x="50" y="0"  value="16" w="25" h="15" label_on="16" label_off="16" font="SFC_12" />
+		<OptionItem x="75" y="0"  value="32" w="25" h="15" label_on="32" label_off="32" font="SFC_12" />
+		<OptionItem x="100" y="0"  value="64" w="25" h="15" label_on="64" label_off="64" font="SFC_12"  />
+		</CS01RadioButtons>
+		<StaticText x="875" y="120" w="118" h="16" style="StaticTextStep" alignment="center" text="(gui_seq.xml/RSC_7)" font="SFC_9"/>
+
+		<!-- Divider -->
+
+		<RoundedRect x="875" y="147" w="122" h="1" style="DividerInverted" />
+
+		<!-- Time Stuff -->
+		
+		<StaticText x="880" y="150" w="75" h="20" text="(gui_seq.xml/RSC_8)" style="StaticTextColor" font="SFCHEADING_16" alignment="left"/>
+
+		<CS03Knob style="KnobStepsSpeed" param="6" role="speedScale" x="884" y="178" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_9)" vmin="0.25" vmax="8" vdefault="1"  enabledByOnOff="1" />
+
+		<!-- SYNC_NUM -->
+		<RoundedRect x="931" y="160" w="25" h="16" roundedRectRatio="0.1" style="RoundedValueBoxes" />
+		<OptionMenu param="7" x="920" y="160" alignment="center" enabledByOnOff="1" checkCurrentValue="1" style="StepEditorOptionMenu">
+			<OptionItem name="(gui_seq.xml/RSC_10)"  value="1"  />
+			<OptionItem name="(gui_seq.xml/RSC_11)"  value="2"  />
+			<OptionItem name="(gui_seq.xml/RSC_12)"  value="3"  />
+			<OptionItem name="(gui_seq.xml/RSC_13)"  value="4"  />
+			<OptionItem name="(gui_seq.xml/RSC_14)"  value="5"  />
+			<OptionItem name="(gui_seq.xml/RSC_15)"  value="6"  />
+			<OptionItem name="(gui_seq.xml/RSC_16)"  value="7"  />
+			<OptionItem name="(gui_seq.xml/RSC_17)"  value="8"  />
+			<OptionItem name="(gui_seq.xml/RSC_18)"  value="9"  />
+			<OptionItem name="(gui_seq.xml/RSC_19)" value="10" />
+			<OptionItem name="(gui_seq.xml/RSC_20)" value="11" />
+			<OptionItem name="(gui_seq.xml/RSC_21)" value="12" />
+			<OptionItem name="(gui_seq.xml/RSC_22)" value="13" />
+			<OptionItem name="(gui_seq.xml/RSC_23)" value="14" />
+			<OptionItem name="(gui_seq.xml/RSC_24)" value="15" />
+			<OptionItem name="(gui_seq.xml/RSC_25)" value="16" />
+			<OptionItem name="(gui_seq.xml/RSC_26)" value="17" />
+			<OptionItem name="(gui_seq.xml/RSC_27)" value="18" />
+			<OptionItem name="(gui_seq.xml/RSC_28)" value="19" />
+			<OptionItem name="(gui_seq.xml/RSC_29)" value="20" />
+			<OptionItem name="(gui_seq.xml/RSC_30)" value="21" />
+			<OptionItem name="(gui_seq.xml/RSC_31)" value="22" />
+			<OptionItem name="(gui_seq.xml/RSC_32)" value="23" />
+			<OptionItem name="(gui_seq.xml/RSC_33)" value="24" />
+			<OptionItem name="(gui_seq.xml/RSC_34)" value="25" />
+			<OptionItem name="(gui_seq.xml/RSC_35)" value="26" />
+			<OptionItem name="(gui_seq.xml/RSC_36)" value="27" />
+			<OptionItem name="(gui_seq.xml/RSC_37)" value="28" />
+			<OptionItem name="(gui_seq.xml/RSC_38)" value="29" />
+			<OptionItem name="(gui_seq.xml/RSC_39)" value="30" />
+			<OptionItem name="(gui_seq.xml/RSC_40)" value="31" />
+			<OptionItem name="(gui_seq.xml/RSC_41)" value="32" />
+		</OptionMenu>
+		<StaticText x="920" y="172" w="46" h="16" style="StaticTextStep2" text="(gui_seq.xml/RSC_42)" font="SFC_9"/>
+
+		<!-- SYNC_DEN -->
+		<RoundedRect x="961" y="160" w="25" h="16" roundedRectRatio="0.1" style="RoundedValueBoxes" />
+		<OptionMenu param="8" x="950" y="160" alignment="center" enabledByOnOff="1" checkCurrentValue="1" style="StepEditorOptionMenu">
+			<OptionItem name="(gui_seq.xml/RSC_10)"   value="1"   />
+			<OptionItem name="(gui_seq.xml/RSC_11)"   value="2"   />
+			<OptionItem name="(gui_seq.xml/RSC_12)"   value="3"   />
+			<OptionItem name="(gui_seq.xml/RSC_13)"   value="4"   />
+			<OptionItem name="(gui_seq.xml/RSC_14)"   value="5"   />
+			<OptionItem name="(gui_seq.xml/RSC_15)"   value="6"   />
+			<OptionItem name="(gui_seq.xml/RSC_16)"   value="7"   />
+			<OptionItem name="(gui_seq.xml/RSC_17)"   value="8"   />
+			<OptionItem name="(gui_seq.xml/RSC_21)"  value="12"  />
+			<OptionItem name="(gui_seq.xml/RSC_25)"  value="16"  />
+			<OptionItem name="(gui_seq.xml/RSC_33)"  value="24"  />
+			<OptionItem name="(gui_seq.xml/RSC_41)"  value="32"  />
+			<OptionItem name="(gui_seq.xml/RSC_43)"  value="48"  />
+			<OptionItem name="(gui_seq.xml/RSC_44)"  value="64"  />
+			<OptionItem name="(gui_seq.xml/RSC_45)"  value="96"  />
+			<OptionItem name="(gui_seq.xml/RSC_46)" value="128" />
+			<OptionItem name="(gui_seq.xml/RSC_47)" value="192" />
+			<OptionItem name="(gui_seq.xml/RSC_48)" value="256" />
+		</OptionMenu>
+		<StaticText x="950" y="172" w="46" h="16" style="StaticTextStep2" text="(gui_seq.xml/RSC_49)" font="SFC_9"/>
+
+		<CS03Knob style="KnobStepsDelayRamp" x="918" y="200" param="11"  vmin="0" vmax="255" labelText="(gui_seq.xml/RSC_50)" role="delay" label_font="SFC_9" enabledByOnOff="1"/>
+		<CS03Knob style="KnobStepsDelayRamp" x="952" y="200" param="13"  vmin="0" vmax="1023" mouseIncrement="10" labelText="(gui_seq.xml/RSC_51)" role="delay" label_font="SFC_9" enabledByOnOff="1" />
+
+		<!-- Divider -->
+
+		<RoundedRect x="875" y="247" w="122" h="1" style="DividerInverted" />
+
+		<!-- Loop Stuff -->
+		<StaticText x="880" y="250" w="75" h="20" text="(gui_seq.xml/RSC_52)" style="StaticTextColor" font="SFCHEADING_16" alignment="left"/>
+
+		<RoundedRect x="946" y="277" w="40" h="60" roundedRectRatio="0.1" style="RoundedValueBoxes" />
+
+		<StaticText x="880" y="279" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_53)" font="SFC_9"/>
+		<OptionMenu role="syncMode" param="4" x="950" y="279" vmin="0" vmax="2" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" alignment="left" style="StepEditorOptionMenu" >
+			<OptionItem value="0" name="(gui_seq.xml/RSC_54)"      stringToDraw="Host"/>
+			<OptionItem value="1" name="(gui_seq.xml/RSC_55)"  stringToDraw="Int."/>
+			<OptionItem value="2" name="(gui_seq.xml/RSC_56)"   stringToDraw="Note"/>
+			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_57)"/>
+		</OptionMenu>
+
+		<StaticText x="880" y="299" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_58)" font="SFC_9"/>
+		<OptionMenu role="resetMode" param="12" x="950" y="299" vmin="0" vmax="3" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" alignment="left" style="StepEditorOptionMenu" >
+			<OptionItem value="0" name="(gui_seq.xml/RSC_59)"  stringToDraw="Each"/>
+			<OptionItem value="1" name="(gui_seq.xml/RSC_60)" stringToDraw="1st"/>
+			<OptionItem value="2" name="(gui_seq.xml/RSC_61)"  stringToDraw="Last"/>
+			<OptionItem value="3" name="(gui_seq.xml/RSC_62)"    stringToDraw="Bar"/>
+			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_63)"/>
+		</OptionMenu>
+
+		<StaticText x="880" y="319" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_64)" font="SFC_9"/>
+		
+		<OptionMenu role="loopMode" param="2" x="950" y="319" vmin="0" vmax="2" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" alignment="left" style="StepEditorOptionMenu" >
+			<OptionItem value="0" name="(gui_seq.xml/RSC_65)"    stringToDraw="Once"/>
+			<OptionItem value="1" name="(gui_seq.xml/RSC_66)"   stringToDraw="Gate"/>
+			<OptionItem value="2" name="(gui_seq.xml/RSC_67)" stringToDraw="∞"/>
+			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_64)"/>
+		</OptionMenu>
+
+		<RoundedRect x="934" y="347" w="1" h="50" style="DividerInverted" />
+
+		<CS03Knob style="KnobStepsLoop" param="9" x="884" y="347" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_68)" vmin="0" vmax="63" vdefault="0"  enabledByOnOff="1" />
+		<CS03Knob style="KnobStepsLoop" param="10" x="947" y="347" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_69)" vmin="0" vmax="63" vdefault="63"  enabledByOnOff="1" />
+
+		<!-- Divider -->
+
+		<RoundedRect x="870" y="404" w="132" h="1" style="DividerInverted" />
+
+		<!-- Generator Expansion --> 
+
+		<StaticImage image="steps_generate.svg" x="845" y="175" />
+		<CS01ExpandViewButton x="842" y="172" w="26" h="26" close_button_tag="12312312" role="shapesExpandView" text="" style="ToolsBarButtons" enabledByOnOff="1"  expandedViewCloser="1" >
+		<CS01ViewContainer path="gui_seq_shapes.xml" x="840" y="170" w="170" h="260" xoffset="0" yoffset="0" />
+
+		</CS01ExpandViewButton>
+
+
+<CS01StepEditor x="0" y="20" w="850" h="400" style="StepEditor"
+			stepsArea_x="10" stepsArea_y="0" stepsArea_w="830" stepsArea_h="384"
+			vmin="0" vmax="127" numSteps="32" minNumSteps="4" maxNumSteps="64" loopingEnabled="1"
+			xAxisColor="#00000040" useKeys="1" activeFillColor="#FFFFFFA0"
+			stepDivisionHintCount="4" loopingSectionFillColor="#acacbfd0" useLoopIndicators="1"
+			loopIndicatorHandleLeft="steploop_handle.svg" loopIndicatorHandleLeft_alignment="center"
+			loopIndicatorHandleRight="steploop_handle.svg" loopIndicatorHandleRight_alignment="center" stepMode0_fillColor="#111111FF" stepMode0_loopingSectionFillColor="#222222FF"
+			stepMode1_loopingSectionFillColor="#bbbbbbFF" loopIndicatorsInvisibleLoopModeValuesI="3" drawRects="1"/>
+
+
+
+
+	</CS01StepEditorContainer>
+</GUI>
