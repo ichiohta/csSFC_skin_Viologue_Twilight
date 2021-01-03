@@ -53,105 +53,105 @@
 	<Rect x="7" y="0" h="340" w="165" drawMode="filled" fill_color="#00000020"/>
 
 	<StaticText y="0" style="StaticTextColorMainLineBreaksHeader" 
-text="WHAT IS THE MATRIX"  />
+text="(gui_modlinks.xml/RSC_10)"  />
 	<StaticText y="12" style="StaticTextColorMainLineBreaks"
-text="The Mod Matrix is where you" />
+text="(gui_modlinks.xml/RSC_11)" />
 	<StaticText y="24" style="StaticTextColorMainLineBreaks"
-text="would set up modulation for" />
+text="(gui_modlinks.xml/RSC_12)" />
 	<StaticText y="36" style="StaticTextColorMainLineBreaks"
-text="mono and poly MIDI modes." />
+text="(gui_modlinks.xml/RSC_13)" />
 
 	<StaticText y="60" style="StaticTextColorMainLineBreaksHeader"
-text="Mono Mode" />
+text="(gui_modlinks.xml/RSC_14)" />
 	<StaticText y="72" style="StaticTextColorMainLineBreaks"
-text="-Setting things using the" />
+text="(gui_modlinks.xml/RSC_15)" />
 	<StaticText y="84" style="StaticTextColorMainLineBreaks"
-text="Voice modulator will affect" />
+text="(gui_modlinks.xml/RSC_16)" />
 	<StaticText y="96" style="StaticTextColorMainLineBreaks"
-text="all channels/layers" />
+text="(gui_modlinks.xml/RSC_17)" />
 
 	<StaticText y="120" style="StaticTextColorMainLineBreaksHeader"
-text="Poly Mode" />
+text="(gui_modlinks.xml/RSC_18)" />
 	<StaticText y="132" style="StaticTextColorMainLineBreaks"
-text="-Setting things using the" />
+text="(gui_modlinks.xml/RSC_15)" />
 	<StaticText y="144" style="StaticTextColorMainLineBreaks"
-text="Voice modulator will affect" />
+text="(gui_modlinks.xml/RSC_16)" />
 	<StaticText y="156" style="StaticTextColorMainLineBreaks"
-text="all incoming MIDI channels" />
+text="(gui_modlinks.xml/RSC_19)" />
 	<StaticText y="168" style="StaticTextColorMainLineBreaks"
-text="and their directed targets." />
+text="(gui_modlinks.xml/RSC_20)" />
 
 	<StaticText y="192" style="StaticTextColorMainLineBreaks"
-text="eg: Setting a source of" />
+text="(gui_modlinks.xml/RSC_21)" />
 	<StaticText y="204" style="StaticTextColorMainLineBreaks"
-text="CC7 to [Voice Amplitude] will" />
+text="(gui_modlinks.xml/RSC_22)" />
 	<StaticText y="216" style="StaticTextColorMainLineBreaks"
-text="make it so that MIDI CH4 will" />
+text="(gui_modlinks.xml/RSC_23)" />
 	<StaticText y="228" style="StaticTextColorMainLineBreaks"
-text="affect SNES Channel 4." />
+text="(gui_modlinks.xml/RSC_24)" />
 
 	<StaticText y="252" style="StaticTextColorMainLineBreaksHeader"
-text="Voice Modulators" />
+text="(gui_modlinks.xml/RSC_25)" />
 	<StaticText y="264" style="StaticTextColorMainLineBreaks"
-text="For modulators that are not" />
+text="(gui_modlinks.xml/RSC_26)" />
 	<StaticText y="276" style="StaticTextColorMainLineBreaks"
-text="in the voice sub-menu, you" />
+text="(gui_modlinks.xml/RSC_27)" />
 	<StaticText y="288" style="StaticTextColorMainLineBreaks"
-text="will need to set it up on a" />
+text="(gui_modlinks.xml/RSC_28)" />
 	<StaticText y="300" style="StaticTextColorMainLineBreaks"
-text="per-channel basis." />
+text="(gui_modlinks.xml/RSC_29)" />
 
 	<StaticText y="324" style="StaticTextColorMainLineBreaks"
-text="When I created Presets for" />
+text="(gui_modlinks.xml/RSC_30)" />
 	<StaticText y="336" style="StaticTextColorMainLineBreaks"
-text="chipsynth SFC, it came with a" />
+text="(gui_modlinks.xml/RSC_31)" />
 	<StaticText y="348" style="StaticTextColorMainLineBreaks"
-text="bunch of Poly-Timbral presets" />
+text="(gui_modlinks.xml/RSC_32)" />
 	<StaticText y="360" style="StaticTextColorMainLineBreaks"
-text="that you can use to not have" />
+text="(gui_modlinks.xml/RSC_33)" />
 	<StaticText y="372" style="StaticTextColorMainLineBreaks"
-text="to spend a lot of time setting" />
+text="(gui_modlinks.xml/RSC_34)" />
 	<StaticText y="384" style="StaticTextColorMainLineBreaks"
-text="general MIDI controllers up." />
+text="(gui_modlinks.xml/RSC_35)" />
 	<StaticText y="396" style="StaticTextColorMainLineBreaks"
-text="Feel free to use them! :)" />
+text="(gui_modlinks.xml/RSC_36)" />
 
 	<StaticText y="420" style="StaticTextColorMainLineBreaksHeader"
-text="Echo/Delay Modulators" />
+text="(gui_modlinks.xml/RSC_37)" />
 	<StaticText y="432" style="StaticTextColorMainLineBreaks"
-text="Due to the needed compatibility" />
+text="(gui_modlinks.xml/RSC_38)" />
 	<StaticText y="444" style="StaticTextColorMainLineBreaks"
-text="with chipcrusher v2, it is not" />
+text="(gui_modlinks.xml/RSC_39)" />
 	<StaticText y="456" style="StaticTextColorMainLineBreaks"
-text="currently possible to modulate" />
+text="(gui_modlinks.xml/RSC_40)" />
 	<StaticText y="468" style="StaticTextColorMainLineBreaks"
-text="most of the Echo/Delay settings" />
+text="(gui_modlinks.xml/RSC_41)" />
 	<StaticText y="480" style="StaticTextColorMainLineBreaks"
-text="at this time." />
+text="(gui_modlinks.xml/RSC_42)" />
 
 	<StaticText y="504" style="StaticTextColorMainLineBreaksHeader"
-text="Amp Modulators" />
+text="(gui_modlinks.xml/RSC_43)" />
 	<StaticText y="516" style="StaticTextColorMainLineBreaks"
-text="It's best to use the Scaled"/>
+text="(gui_modlinks.xml/RSC_44)"/>
 	<StaticText y="528" style="StaticTextColorMainLineBreaks"
-text="math setting for volume" />
+text="(gui_modlinks.xml/RSC_45)" />
 	<StaticText y="540" style="StaticTextColorMainLineBreaks"
-text="commands so that they scale" />
+text="(gui_modlinks.xml/RSC_46)" />
 	<StaticText y="552" style="StaticTextColorMainLineBreaks"
-text="in proportion to other volume" />
+text="(gui_modlinks.xml/RSC_47)" />
 	<StaticText y="564" style="StaticTextColorMainLineBreaks"
-text="commands." />
+text="(gui_modlinks.xml/RSC_48)" />
 
 	<StaticText y="588" style="StaticTextColorMainLineBreaks"
-text="For more information about how" />
+text="(gui_modlinks.xml/RSC_49)" />
 	<StaticText y="600" style="StaticTextColorMainLineBreaks"
-text="to use the Mod Matrix, check" />
+text="(gui_modlinks.xml/RSC_50)" />
 	<StaticText y="612" style="StaticTextColorMainLineBreaks"
-text="out my SNES Music YouTube" />
+text="(gui_modlinks.xml/RSC_51)" />
 	<StaticText y="624" style="StaticTextColorMainLineBreaks"
-text="series on" />
+text="(gui_modlinks.xml/RSC_52)" />
 	<StaticText x="55" y="624" style="StaticTextColorMainLineBreaks"
- text="(gui_modlinks.xml/RSC_10)" url="https://www.youtube.com/watch?v=ZhWsz4heXNw&amp;list=PLNRafIhbJER2W5m-JD5-4zRy1D2zcnlfE&amp;index=10" color_text="#AAAAFFD0"/>
+ text="(gui_modlinks.xml/RSC_53)" url="https://www.youtube.com/watch?v=ZhWsz4heXNw&amp;list=PLNRafIhbJER2W5m-JD5-4zRy1D2zcnlfE&amp;index=10" color_text="#AAAAFFD0"/>
 	
 	</ScrollView>
 
@@ -159,174 +159,174 @@ text="series on" />
 	<Rect x="7" y="0" h="340" w="165" drawMode="filled" fill_color="#00000020"/>
 
 	<StaticText y="0" style="StaticTextColorMainLineBreaksHeader"
-text="GLOSSARY OF COLUMNS" />
+text="(gui_modlinks.xml/RSC_54)" />
 
 	<StaticText y="24" style="StaticTextColorMainLineBreaksHeader"
-text="Source" />
+text="(gui_modlinks.xml/RSC_1)" />
 	<StaticText y="36" style="StaticTextColorMainLineBreaks"
-text="Sets the source of the effect." />
+text="(gui_modlinks.xml/RSC_55)" />
 	<StaticText y="48" style="StaticTextColorMainLineBreaks"	
-text="This can be MIDI Continuous" />
+text="(gui_modlinks.xml/RSC_56)" />
 	<StaticText y="60" style="StaticTextColorMainLineBreaks"	
-text="Controllers, or things such as"/>
+text="(gui_modlinks.xml/RSC_57)"/>
 	<StaticText y="72" style="StaticTextColorMainLineBreaks"
-text="Step Modulators, the Pitch"/>
+text="(gui_modlinks.xml/RSC_58)"/>
 	<StaticText y="84" style="StaticTextColorMainLineBreaks"
-text="Bend Wheel, key tracking, etc."/>
+text="(gui_modlinks.xml/RSC_59)"/>
 
 	<StaticText y="108" style="StaticTextColorMainLineBreaksHeader"
-text="Function" />
+text="(gui_modlinks.xml/RSC_2)" />
 	<StaticText y="120" style="StaticTextColorMainLineBreaks"
-text="Allows you to select the" />
+text="(gui_modlinks.xml/RSC_60)" />
 	<StaticText y="132" style="StaticTextColorMainLineBreaks"
-text="mathematical steepness of the" />
+text="(gui_modlinks.xml/RSC_61)" />
 	<StaticText y="144" style="StaticTextColorMainLineBreaks"
-text="curve, or even invert it."/>
+text="(gui_modlinks.xml/RSC_62)"/>
 
 	<StaticText y="168" style="StaticTextColorMainLineBreaks"
-text="example:" />
+text="(gui_modlinks.xml/RSC_63)" />
 	<StaticText y="180" style="StaticTextColorMainLineBreaks"
-text="If you want to control the note" />
+text="(gui_modlinks.xml/RSC_64)" />
 	<StaticText y="192" style="StaticTextColorMainLineBreaks"
-text="velocity's volume steepness,"/>
+text="(gui_modlinks.xml/RSC_65)"/>
 	<StaticText y="204" style="StaticTextColorMainLineBreaks"
-text="you would set the source to" />
+text="(gui_modlinks.xml/RSC_66)" />
 	<StaticText y="216" style="StaticTextColorMainLineBreaks"
-text="MIDI - Velocity (Poly) and the" />
+text="(gui_modlinks.xml/RSC_67)" />
 	<StaticText y="228" style="StaticTextColorMainLineBreaks"
-text="Destination to a volume of your" />
+text="(gui_modlinks.xml/RSC_68)" />
 	<StaticText y="240" style="StaticTextColorMainLineBreaks"
-text="choice. The function would then" />
+text="(gui_modlinks.xml/RSC_69)" />
 	<StaticText y="252" style="StaticTextColorMainLineBreaks"
-text="give you more options for" />
+text="(gui_modlinks.xml/RSC_70)" />
 	<StaticText y="264" style="StaticTextColorMainLineBreaks"
-text="changing how sensitive the" />
+text="(gui_modlinks.xml/RSC_71)" />
 	<StaticText y="276" style="StaticTextColorMainLineBreaks"
-text="note velocity curve. (This is" />
+text="(gui_modlinks.xml/RSC_72)" />
 	<StaticText y="288" style="StaticTextColorMainLineBreaks"
-text="just an example, but it's easier" />
+text="(gui_modlinks.xml/RSC_73)" />
 	<StaticText y="300" style="StaticTextColorMainLineBreaks"
-text="to achieve this by modifying the" />
+text="(gui_modlinks.xml/RSC_74)" />
 	<StaticText y="312" style="StaticTextColorMainLineBreaks"
-text="option in the Settings button at" />
+text="(gui_modlinks.xml/RSC_75)" />
 	<StaticText y="324" style="StaticTextColorMainLineBreaks"
-text="the top of chipsynth SFC. This" />
+text="(gui_modlinks.xml/RSC_76)" />
 	<StaticText y="336" style="StaticTextColorMainLineBreaks"
-text="does give you more control for" />
+text="(gui_modlinks.xml/RSC_77)" />
 	<StaticText y="348" style="StaticTextColorMainLineBreaks"
-text="other effects, though.)" />
+text="(gui_modlinks.xml/RSC_78)" />
 
 	<StaticText y="372" style="StaticTextColorMainLineBreaksHeader"
-text="Control" />
+text="(gui_modlinks.xml/RSC_3)" />
 	<StaticText y="384" style="StaticTextColorMainLineBreaks"
-text="Allows you to assign an alternate" />
+text="(gui_modlinks.xml/RSC_79)" />
 	<StaticText y="396" style="StaticTextColorMainLineBreaks"
-text="control mechanism to a source" />
+text="(gui_modlinks.xml/RSC_80)" />
 	<StaticText y="408" style="StaticTextColorMainLineBreaks"
-text="that is constant."/>
+text="(gui_modlinks.xml/RSC_81)"/>
 
 	<StaticText y="432" style="StaticTextColorMainLineBreaks"
-text="example:" />
+text="(gui_modlinks.xml/RSC_63)" />
 	<StaticText y="444" style="StaticTextColorMainLineBreaks"
-text="Using on a step modulator to" />
+text="(gui_modlinks.xml/RSC_82)" />
 	<StaticText y="456" style="StaticTextColorMainLineBreaks"
-text="modulate pitch for vibrato will" />
+text="(gui_modlinks.xml/RSC_83)" />
 	<StaticText y="468" style="StaticTextColorMainLineBreaks"
-text="allow you to control its depth" />
+text="(gui_modlinks.xml/RSC_84)" />
 	<StaticText y="480" style="StaticTextColorMainLineBreaks"
-text="dynamically by assigning a" />
+text="(gui_modlinks.xml/RSC_85)" />
 	<StaticText y="492" style="StaticTextColorMainLineBreaks"
-text="control to CC 1. This is a default" />
+text="(gui_modlinks.xml/RSC_86)" />
 	<StaticText y="504" style="StaticTextColorMainLineBreaks"
-text="setting in chipsynth SFC)" />
+text="(gui_modlinks.xml/RSC_87)" />
 
 	<StaticText y="528" style="StaticTextColorMainLineBreaksHeader"
-text="Function" />
+text="(gui_modlinks.xml/RSC_2)" />
 	<StaticText y="540" style="StaticTextColorMainLineBreaks"
-text="Similar to the function in" />
+text="(gui_modlinks.xml/RSC_88)" />
 	<StaticText y="552" style="StaticTextColorMainLineBreaks"
-text="source, but controls Source." />
+text="(gui_modlinks.xml/RSC_89)" />
 
 	<StaticText y="576" style="StaticTextColorMainLineBreaksHeader"
-text="Destination" />
+text="(gui_modlinks.xml/RSC_4)" />
 	<StaticText y="588" style="StaticTextColorMainLineBreaks"
-text="Allows you to set the effect you" />
+text="(gui_modlinks.xml/RSC_90)" />
 	<StaticText y="600" style="StaticTextColorMainLineBreaks"
-text="want to control." />
+text="(gui_modlinks.xml/RSC_91)" />
 
 	<StaticText y="624" style="StaticTextColorMainLineBreaksHeader"
-text="Range" />
+text="(gui_modlinks.xml/RSC_5)" />
 	<StaticText y="636" style="StaticTextColorMainLineBreaks"
-text="Lets you set the depth range of" />
+text="(gui_modlinks.xml/RSC_92)" />
 	<StaticText y="648" style="StaticTextColorMainLineBreaks"
-text="an effect." />
+text="(gui_modlinks.xml/RSC_93)" />
 
 	<StaticText y="672" style="StaticTextColorMainLineBreaks"
-text="example:" />
+text="(gui_modlinks.xml/RSC_63)" />
 	<StaticText y="684" style="StaticTextColorMainLineBreaks"
-text="If you want to set up a pan effect," />
+text="(gui_modlinks.xml/RSC_94)" />
 	<StaticText y="696" style="StaticTextColorMainLineBreaks"
-text="you could set the source to CC10," />
+text="(gui_modlinks.xml/RSC_95)" />
 	<StaticText y="708" style="StaticTextColorMainLineBreaks"
-text="the function to Linear, leave" />
+text="(gui_modlinks.xml/RSC_96)" />
 	<StaticText y="720" style="StaticTextColorMainLineBreaks"
-text="Control/Function blank, set the" />
+text="(gui_modlinks.xml/RSC_97)" />
 	<StaticText y="732" style="StaticTextColorMainLineBreaks"
-text="Destination to the desired" />
+text="(gui_modlinks.xml/RSC_98)" />
 	<StaticText y="744" style="StaticTextColorMainLineBreaks"
-text="channel pan you want to set, and" />
+text="(gui_modlinks.xml/RSC_99)" />
 	<StaticText y="756" style="StaticTextColorMainLineBreaks"
-text="then set the range -100% to" />
+text="(gui_modlinks.xml/RSC_100)" />
 	<StaticText y="768" style="StaticTextColorMainLineBreaks"
-text="100%." />
+text="(gui_modlinks.xml/RSC_101)" />
 
 	<StaticText y="792" style="StaticTextColorMainLineBreaksHeader"
-text="Inv" />
+text="(gui_modlinks.xml/RSC_6)" />
 	<StaticText y="804" style="StaticTextColorMainLineBreaks"
-text="Inverts the depth of the range." />
+text="(gui_modlinks.xml/RSC_102)" />
 
 	<StaticText y="828" style="StaticTextColorMainLineBreaksHeader"
-text="Math" />
+text="(gui_modlinks.xml/RSC_7)" />
 	<StaticText y="840" style="StaticTextColorMainLineBreaks"
-text="Replace - Replaces the chosen" />
+text="(gui_modlinks.xml/RSC_103)" />
 	<StaticText y="852" style="StaticTextColorMainLineBreaks"
-text="effect parameter in the" />
+text="(gui_modlinks.xml/RSC_104)" />
 	<StaticText y="864" style="StaticTextColorMainLineBreaks"
-text="channel/layer" />
+text="(gui_modlinks.xml/RSC_105)" />
 
 	<StaticText y="888" style="StaticTextColorMainLineBreaks"
-text="Offset - Changes parameter in" />
+text="(gui_modlinks.xml/RSC_106)" />
 	<StaticText y="900" style="StaticTextColorMainLineBreaks"
-text="relation to the setting in the" />
+text="(gui_modlinks.xml/RSC_107)" />
 	<StaticText y="912" style="StaticTextColorMainLineBreaks"
-text="channels tab" />
+text="(gui_modlinks.xml/RSC_108)" />
 
 	<StaticText y="936" style="StaticTextColorMainLineBreaks"
-text="Accum - Accumulates to the" />
+text="(gui_modlinks.xml/RSC_109)" />
 	<StaticText y="948" style="StaticTextColorMainLineBreaks"
-text="current setting in the channels" />
+text="(gui_modlinks.xml/RSC_110)" />
 	<StaticText y="960" style="StaticTextColorMainLineBreaks"
-text="tab" />
+text="(gui_modlinks.xml/RSC_111)" />
 
 	<StaticText y="984" style="StaticTextColorMainLineBreaks"
-text="Scale - Use this when wanting to" />
+text="(gui_modlinks.xml/RSC_112)" />
 	<StaticText y="996" style="StaticTextColorMainLineBreaks"
-text="set up something like CC7 and" />
+text="(gui_modlinks.xml/RSC_113)" />
 	<StaticText y="1008" style="StaticTextColorMainLineBreaks"
-text="CC11 volumes so they scale in" />
+text="(gui_modlinks.xml/RSC_114)" />
 	<StaticText y="1020" style="StaticTextColorMainLineBreaks"
-text="proportion to each other." /> 
+text="(gui_modlinks.xml/RSC_115)" /> 
 
 	<StaticText y="1044" style="StaticTextColorMainLineBreaks"
-text="For more information about how" />
+text="(gui_modlinks.xml/RSC_49)" />
 	<StaticText y="1056" style="StaticTextColorMainLineBreaks"
-text="to use the Mod Matrix, check" />
+text="(gui_modlinks.xml/RSC_50)" />
 	<StaticText y="1068" style="StaticTextColorMainLineBreaks"
-text="out my SNES Music YouTube" />
+text="(gui_modlinks.xml/RSC_51)" />
 	<StaticText y="1080" style="StaticTextColorMainLineBreaks"
-text="series on" />
+text="(gui_modlinks.xml/RSC_52)" />
 	<StaticText x="55" y="1080" style="StaticTextColorMainLineBreaks"
- text="(gui_modlinks.xml/RSC_10)" url="https://www.youtube.com/watch?v=ZhWsz4heXNw&amp;list=PLNRafIhbJER2W5m-JD5-4zRy1D2zcnlfE&amp;index=10" color_text="#AAAAFFD0"/>
+ text="(gui_modlinks.xml/RSC_53)" url="https://www.youtube.com/watch?v=ZhWsz4heXNw&amp;list=PLNRafIhbJER2W5m-JD5-4zRy1D2zcnlfE&amp;index=10" color_text="#AAAAFFD0"/>
 	
 	</ScrollView>
 </ScrollView>
@@ -334,9 +334,9 @@ text="series on" />
 	<CS01ScrollViewPageController x="885" y="23" w="157" h="20" type="0" style="ScrollViewPageController" frameColor="#FFFFFF00" 
 			frameDraw="0" scrollViewName="MatrixTips" image_1="SVEmpty.svg" image_2="SVEmpty.svg" image_1HL="SVEmpty.svg" image_2HL="SVEmpty.svg" disabledLuminanceChange="0" name="MatrixTipsController" showPageName="1" showPageNameType="2" font="SFCHEADING_12" 
 			circleEdit="0" circleEditColor="#00000000" showPageNameCheckCurrentValue="1">
-		<PageName idx="0" name="(gui_modlinks.xml/RSC_11)"/>
+		<PageName idx="0" name="(gui_modlinks.xml/RSC_116)"/>
 		<PageName idx="1" name="(gui_modlinks.xml/RSC_0)"/>
-		<PageName idx="2" name="(gui_modlinks.xml/RSC_12)"/>
+		<PageName idx="2" name="(gui_modlinks.xml/RSC_117)"/>
 		
 
 	</CS01ScrollViewPageController>
