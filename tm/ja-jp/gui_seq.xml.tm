@@ -53,18 +53,28 @@ Ease In	傾斜
 Step Loop	ループ
 Sync	同期
 Host BPM	ホスト BPM
+Host	Host
 Internal BPM	内部 BPM
+Int.	Int.
 Note Period	ノート
+Note	Note
 BPM Source	BPM 同期先
 Restart	リセット
 Each Note	毎ノート
+Each	毎ノート
 First Note	最初のノート
+1st	最初
 Last Note	最後のノート
+Last	最後
 Bar Pos	毎小節
+Bar	毎小節
 Restart Position	Restart Position
 Loop Mode	ループモード
-One Shot	しない
+One Shot	無効
+Once	無効
 Note Gate	発音中のみ
+Gate	発音中
 Loop Always	常に
+∞	∞
 In	In
 Out	Out
