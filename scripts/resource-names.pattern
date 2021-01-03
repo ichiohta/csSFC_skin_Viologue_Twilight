@@ -1,6 +1,6 @@
- labelText
- text
- stringToDraw
+[\s^]labelText
+[\s^]text
+[\s^]stringToDraw
 <OptionItem [^>]*name
 <PageName [^>]*name
 <Font [^>]*filename

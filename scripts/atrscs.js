@@ -24,10 +24,18 @@ fs_1.readdirSync(inputResourcePath)
     const outputPath = `${outputResourcePath}/${filename}`;
     const tmFileName = filename.replace(/\.json/, ".tm");
     const translationMemoryCulturePath = `${translationMemoryCultureRootPath}/${tmFileName}`;
-    auto_translate_1.autoTranslate({
-        inputPath,
-        outputPath,
-        translationMemoryPaths: [translationMemoryCulturePath]
-    });
+    if (fs_1.existsSync(translationMemoryCulturePath)) {
+        auto_translate_1.autoTranslate({
+            inputPath,
+            outputPath,
+            translationMemoryPaths: [translationMemoryCulturePath]
+        });
+    }
+    else {
+        // If there is no tm, just copy the resource file
+        file_helpers_1.copyFileSync(inputPath, outputPath, (file, reason) => {
+            console.error(`Unable to copy resource file '${file}', due to: ${reason}`);
+        });
+    }
 });
 //# sourceMappingURL=atrscs.js.map
