@@ -3,17 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = require("fs");
 const generate_template_1 = require("./lib/generate-template");
 const argument_helpers_1 = require("./lib/argument-helpers");
-const rootPath = argument_helpers_1.normalizeSeparator(__dirname);
-const xmlRootPath = `${rootPath}/GUI_USER.common`;
-const outputRootPath = `${rootPath}/sources`;
+const { commonFilePath: xmlRootPath, sourceRootPath: outputRootPath, resourceRootPath } = argument_helpers_1.getFolderPaths(__dirname);
 const baseCulture = "en-ca";
-const resourceRootPath = `${rootPath}/resources`;
 const resourceOutputPath = `${resourceRootPath}/${baseCulture}`;
 if (!fs_1.existsSync(resourceOutputPath)) {
-    fs_1.mkdirSync(resourceOutputPath);
+    fs_1.mkdirSync(resourceOutputPath, { recursive: true });
 }
 if (!fs_1.existsSync(outputRootPath)) {
-    fs_1.mkdirSync(outputRootPath);
+    fs_1.mkdirSync(outputRootPath, { recursive: true });
 }
 fs_1.readdirSync(xmlRootPath)
     .filter(filename => filename.endsWith(".xml"))

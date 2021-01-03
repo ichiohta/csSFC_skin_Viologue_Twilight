@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.copyFileSync = void 0;
+exports.ensureEmptyFolder = exports.ensureNoFolder = exports.ensureFolder = exports.copyFileSync = void 0;
 const fs_1 = require("fs");
 const path_1 = require("path");
 const fileExists = (name) => fs_1.existsSync(name);
@@ -47,4 +47,21 @@ const copyFileSync = (source, target, onError) => {
     }
 };
 exports.copyFileSync = copyFileSync;
+const ensureFolder = (path) => {
+    if (!fs_1.existsSync(path)) {
+        fs_1.mkdirSync(path, { recursive: true });
+    }
+};
+exports.ensureFolder = ensureFolder;
+const ensureNoFolder = (path) => {
+    if (fs_1.existsSync(path)) {
+        fs_1.rmdirSync(path, { recursive: true });
+    }
+};
+exports.ensureNoFolder = ensureNoFolder;
+const ensureEmptyFolder = (path) => {
+    exports.ensureNoFolder(path);
+    exports.ensureFolder(path);
+};
+exports.ensureEmptyFolder = ensureEmptyFolder;
 //# sourceMappingURL=file-helpers.js.map

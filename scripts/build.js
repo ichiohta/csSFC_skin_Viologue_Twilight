@@ -5,23 +5,18 @@ const localize_file_1 = require("./lib/localize-file");
 const file_helpers_1 = require("./lib/file-helpers");
 const argument_helpers_1 = require("./lib/argument-helpers");
 const args = process.argv.splice(2);
-const rootPath = argument_helpers_1.normalizeSeparator(__dirname);
-const commonFilePath = `${rootPath}/GUI_USER.common`;
-const sourceRootPath = `${rootPath}/sources`;
-const buildRootPath = `${rootPath}/build`;
+const { buildRootPath, commonFilePath, sourceRootPath, resourceRootPath } = argument_helpers_1.getFolderPaths(__dirname);
 const baseCulture = "en-ca";
 const cultures = args.length > 0 ? args : ["xx-zz", "en-us", "ja-jp"];
-const baseCultureResourceRootPath = `${rootPath}/resources/${baseCulture}`;
+const baseCultureResourceRootPath = `${resourceRootPath}/${baseCulture}`;
 const onError = (_file, reason) => {
     console.error(reason);
 };
 for (const culture of cultures) {
-    const cutlureResourceRootPath = `${rootPath}/resources/${culture}`;
+    const cutlureResourceRootPath = `${resourceRootPath}/${culture}`;
     const cultureBuildRootPath = `${buildRootPath}/${culture}/GUI_USER`;
     // Ensure we delete the existing build
-    if (fs_1.existsSync(cultureBuildRootPath)) {
-        fs_1.rmdirSync(cultureBuildRootPath, { recursive: true });
-    }
+    file_helpers_1.ensureNoFolder(cultureBuildRootPath);
     console.log(`Copying common files for ${culture}`);
     file_helpers_1.copyFileSync(commonFilePath, cultureBuildRootPath, onError);
     console.log(`Generating localized files for ${culture}`);

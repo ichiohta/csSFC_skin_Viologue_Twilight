@@ -1,5 +1,6 @@
  labelText
  text
+ stringToDraw
 <OptionItem [^>]*name
 <PageName [^>]*name
 <Font [^>]*filename

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.normalizeSeparator = exports.validateFilePath = void 0;
+exports.getFolderPaths = exports.getRootPath = exports.validateFilePath = void 0;
 const fs_1 = require("fs");
 const validateFilePath = (path, options) => {
     const { needsExist, what } = options;
@@ -12,6 +12,23 @@ const validateFilePath = (path, options) => {
     }
 };
 exports.validateFilePath = validateFilePath;
-const normalizeSeparator = (path) => path.replace(/\\/g, "/").replace(/\/[^/]+$/, "");
-exports.normalizeSeparator = normalizeSeparator;
+const getRootPath = (path) => path.replace(/\\/g, "/").replace(/\/[^/]+$/, "");
+exports.getRootPath = getRootPath;
+const getFolderPaths = (dirname) => {
+    const rootPath = exports.getRootPath(dirname);
+    const resourceRootPath = `${rootPath}/resources`;
+    const buildRootPath = `${rootPath}/build`;
+    const sourceRootPath = `${rootPath}/sources`;
+    const commonFilePath = `${rootPath}/GUI_USER.common`;
+    const translationMemoryPath = `${rootPath}/tm`;
+    return {
+        rootPath,
+        resourceRootPath,
+        buildRootPath,
+        sourceRootPath,
+        commonFilePath,
+        translationMemoryRootPath: translationMemoryPath
+    };
+};
+exports.getFolderPaths = getFolderPaths;
 //# sourceMappingURL=argument-helpers.js.map
