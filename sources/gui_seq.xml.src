@@ -154,34 +154,34 @@
 
 		<StaticText x="880" y="279" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_53)" font="SFC_9"/>
 		<OptionMenu role="syncMode" param="4" x="950" y="279" vmin="0" vmax="2" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" alignment="left" style="StepEditorOptionMenu" >
-			<OptionItem value="0" name="(gui_seq.xml/RSC_54)"      stringToDraw="Host"/>
-			<OptionItem value="1" name="(gui_seq.xml/RSC_55)"  stringToDraw="Int."/>
-			<OptionItem value="2" name="(gui_seq.xml/RSC_56)"   stringToDraw="Note"/>
-			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_57)"/>
+			<OptionItem value="0" name="(gui_seq.xml/RSC_54)"      stringToDraw="(gui_seq.xml/RSC_55)"/>
+			<OptionItem value="1" name="(gui_seq.xml/RSC_56)"  stringToDraw="(gui_seq.xml/RSC_57)"/>
+			<OptionItem value="2" name="(gui_seq.xml/RSC_58)"   stringToDraw="(gui_seq.xml/RSC_59)"/>
+			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_60)"/>
 		</OptionMenu>
 
-		<StaticText x="880" y="299" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_58)" font="SFC_9"/>
+		<StaticText x="880" y="299" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_61)" font="SFC_9"/>
 		<OptionMenu role="resetMode" param="12" x="950" y="299" vmin="0" vmax="3" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" alignment="left" style="StepEditorOptionMenu" >
-			<OptionItem value="0" name="(gui_seq.xml/RSC_59)"  stringToDraw="Each"/>
-			<OptionItem value="1" name="(gui_seq.xml/RSC_60)" stringToDraw="1st"/>
-			<OptionItem value="2" name="(gui_seq.xml/RSC_61)"  stringToDraw="Last"/>
-			<OptionItem value="3" name="(gui_seq.xml/RSC_62)"    stringToDraw="Bar"/>
-			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_63)"/>
+			<OptionItem value="0" name="(gui_seq.xml/RSC_62)"  stringToDraw="(gui_seq.xml/RSC_63)"/>
+			<OptionItem value="1" name="(gui_seq.xml/RSC_64)" stringToDraw="(gui_seq.xml/RSC_65)"/>
+			<OptionItem value="2" name="(gui_seq.xml/RSC_66)"  stringToDraw="(gui_seq.xml/RSC_67)"/>
+			<OptionItem value="3" name="(gui_seq.xml/RSC_68)"    stringToDraw="(gui_seq.xml/RSC_69)"/>
+			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_70)"/>
 		</OptionMenu>
 
-		<StaticText x="880" y="319" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_64)" font="SFC_9"/>
+		<StaticText x="880" y="319" w="60" h="16" style="StaticTextStep" alignment="left"  text="(gui_seq.xml/RSC_71)" font="SFC_9"/>
 		
 		<OptionMenu role="loopMode" param="2" x="950" y="319" vmin="0" vmax="2" vdefault="0" enabledByOnOff="1" checkCurrentValue="1" alignment="left" style="StepEditorOptionMenu" >
-			<OptionItem value="0" name="(gui_seq.xml/RSC_65)"    stringToDraw="Once"/>
-			<OptionItem value="1" name="(gui_seq.xml/RSC_66)"   stringToDraw="Gate"/>
-			<OptionItem value="2" name="(gui_seq.xml/RSC_67)" stringToDraw="∞"/>
-			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_64)"/>
+			<OptionItem value="0" name="(gui_seq.xml/RSC_72)"    stringToDraw="(gui_seq.xml/RSC_73)"/>
+			<OptionItem value="1" name="(gui_seq.xml/RSC_74)"   stringToDraw="(gui_seq.xml/RSC_75)"/>
+			<OptionItem value="2" name="(gui_seq.xml/RSC_76)" stringToDraw="(gui_seq.xml/RSC_77)"/>
+			<OptionItem isTitle="1" name="(gui_seq.xml/RSC_71)"/>
 		</OptionMenu>
 
 		<RoundedRect x="934" y="347" w="1" h="50" style="DividerInverted" />
 
-		<CS03Knob style="KnobStepsLoop" param="9" x="884" y="347" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_68)" vmin="0" vmax="63" vdefault="0"  enabledByOnOff="1" />
-		<CS03Knob style="KnobStepsLoop" param="10" x="947" y="347" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_69)" vmin="0" vmax="63" vdefault="63"  enabledByOnOff="1" />
+		<CS03Knob style="KnobStepsLoop" param="9" x="884" y="347" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_78)" vmin="0" vmax="63" vdefault="0"  enabledByOnOff="1" />
+		<CS03Knob style="KnobStepsLoop" param="10" x="947" y="347" textEdit_font="SFC_11" showValueTextOverKnob="0" labelText="(gui_seq.xml/RSC_79)" vmin="0" vmax="63" vdefault="63"  enabledByOnOff="1" />
 
 		<!-- Divider -->
 
